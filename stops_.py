@@ -236,7 +236,7 @@ class Stops2:
                             k-=1                          
                                     
                     else:
-                        if self.can_receive(j, self.pop[self.pop_size]):
+                        if self.can_receive(j, self.pop[self.pop_size-1]):
                             self.pop[self.pop_size,self.reception[j]]=min(self.pop[self.pop_size,self.reception[j]]+1,self.bound[self.reception[j]])
                             k-=1
 
