@@ -237,7 +237,7 @@ class Stops2:
                                     
                     else:
                         if self.can_receive(j, self.pop[self.pop_size-1]):
-                            self.pop[self.pop_size,self.reception[j]]=min(self.pop[self.pop_size,self.reception[j]]+1,self.bound[self.reception[j]])
+                            self.pop[self.pop_size-1,self.reception[j]]=min(self.pop[self.pop_size-1,self.reception[j]]+1,self.bound[self.reception[j]])
                             k-=1
 
     def _step_numpy(self):
