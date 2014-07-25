@@ -11,15 +11,15 @@ reception = numpy.array([3, 4])
 receptors = numpy.array([-1,-1])
 bound=numpy.array([1,1,1,1,1,1])
 
-base1=numpy.array([0,0,1,0,0,0])
+base1=numpy.array([0,0,1,0,0,0]) # all cells switched on for differentiation
 
 
 trans_mat = numpy.array([[0,0,0,0,0,0], #Delta_ligand
                          [20,0,2,0,0,0], #dummy
-	[0,0.0005,0,0,1,0], #Delta
+	                 [0,0.0005,0,0,1,0], #Delta
                          [0,-1,-2,0,0,1], #notch receptor
                          [0,0,1,0,0,0],#basal
-                         [0,0,0,0,0,0] #sequential activation
+                         [0,0,0,0,0,0] #sequential activation not_imp_for_this_case
                          ])
 
 init_pop = generate_pop([(2500, base1)])
